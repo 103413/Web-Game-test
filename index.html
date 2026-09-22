@@ -8,8 +8,21 @@
 </head>
 <body>
     <a-scene>
-        <a-sky src="WATERVAL-260GRADEN-PANORAMA-RGB.jpg" rotation="0 -130 0"></a-sky>
-        <a-text value="Hello World VR" position="-1 1.5 -3"></a-text>
+        <a-box
+            position="-1 1 -3"
+            color="red"
+            onclick="this.setAttribute('color', 'blue')">
+        </a-box>
+
+        <a-sphere
+            position="1 1 -3"
+            color="green"
+            onclick="this.setAttribute('color', 'yellow')">
+        </a-sphere>
+
+        <a-camera position="0 1.6 0">
+            <a-cursor></a-cursor>
+        </a-camera>
     </a-scene>
 </body>
 </html>
